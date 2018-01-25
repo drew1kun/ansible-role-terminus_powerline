@@ -1,0 +1,10 @@
+---
+# defaults file for ansible-terminus-powerline
+
+# system | user | users
+terminus_powerline_env: system
+
+terminus_powerline_users:
+  - drew
+  - pi
+...
