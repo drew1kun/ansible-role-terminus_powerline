@@ -1,4 +1,4 @@
-terminus_powerline
+Ansible role: terminus_powerline
 =========
 
 [![MIT licensed][mit-badge]][mit-link]
