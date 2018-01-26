@@ -8,7 +8,17 @@ Requirements
 
 One of the following OS (or deriviatives):
  - Debian
- - MacOS (with Homebrew)
+ - MacOS (with [Homebrew][homebrew])
+
+For MacOS:
+if Homebrew is not installed on the managed host, install the following role via galaxy:
+
+    ansible-galaxy install drew-kun.homebrew
+
+ And include it in the playbook:
+
+    roles:
+        - drew-kun.homebrew
 
 Role Variables
 --------------
@@ -26,15 +36,21 @@ Example Playbook
 
     - hosts: dev_clients
       roles:
-         - role: drew-kun.terminus_powerline
+        - drew-kun.homebrew
+        - drew-kun.terminus_powerline
 
 License
 -------
 
-MIT
+[MIT][mit-link]
 
 Author Information
 ------------------
 
 ![Andrew Shagayev](drewshg@gmail.com)
 
+[role-badge]:https://img.shields.io/badge/role-drew--kun.terminus__powerline-green.svg
+[galaxy-link]: https://galaxy.ansible.com/drew-kun/terminus_powerline/
+[mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[mit-link]: https://raw.githubusercontent.com/geerlingguy/ansible-role-homebrew/master/LICENSE
+[homebrew]: http://brew.sh/
