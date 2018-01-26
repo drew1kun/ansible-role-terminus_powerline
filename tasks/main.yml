@@ -12,7 +12,7 @@
 
 - name: '[main] Clone Terminus-Powerline Patched font from my github repo'
   git:
-    repo: https://github.com/Drewshg312/terminus_powerline_font_osx.git
+    repo: https://github.com/drew-kun/terminus_powerline_font_osx.git
     dest: "{{ terminus_powerline_fonts_dir }}/terminus_powerline"
     force: yes
   become: yes

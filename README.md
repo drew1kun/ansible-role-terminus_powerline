@@ -4,7 +4,7 @@ Ansible role: terminus_powerline
 [![MIT licensed][mit-badge]][mit-link]
 [![Galaxy Role][role-badge]][galaxy-link]
 
-Cross-platform ansible role for installation of Terminus font (patched with Powerline symbols)
+Cross-platform ansible role for System-wide installation of Terminus font (patched with Powerline symbols)
 
 Requirements
 ------------
@@ -26,8 +26,9 @@ if Homebrew is not installed on the managed host, install the following role via
 Role Variables
 --------------
 
-    - terminus_powerline_env: system | user/users   # install font system-wide or user-wide
-    - terminus_powerline_users:                     # list of users if running user-specific installation
+OS-Specific:
+
+    - terminus_powerline_fonts_dir:     # directory where the fonts being installed
 
 Dependencies
 ------------
@@ -37,10 +38,18 @@ None
 Example Playbook
 ----------------
 
-    - hosts: dev_clients
+For MacOS:
+
+    - hosts: dev_clients_macos
       roles:
         - drew-kun.homebrew
         - drew-kun.terminus_powerline
+
+For Linux:
+
+    - hosts: dev_clients_linux
+      roles:
+        - drew.kun.terminus_powerline
 
 License
 -------
