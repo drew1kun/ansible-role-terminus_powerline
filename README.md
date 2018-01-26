@@ -4,7 +4,7 @@ Ansible role: terminus_powerline
 [![MIT licensed][mit-badge]][mit-link]
 [![Galaxy Role][role-badge]][galaxy-link]
 
-Cross-platform ansible role for System-wide installation of Terminus font (patched with Powerline symbols)
+Cross-platform ansible role for installation of Terminus font (patched with Powerline symbols)
 
 Requirements
 ------------
