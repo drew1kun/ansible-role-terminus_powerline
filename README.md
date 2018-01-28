@@ -28,7 +28,7 @@ Role Variables
 
 OS-Specific:
 
-    - terminus_powerline_fonts_dir:     # directory where the fonts being installed
+    terminus_powerline_fonts_dir:     # directory where the fonts being installed
 
 Dependencies
 ------------
