@@ -28,14 +28,14 @@ Role Variables
 
 OS-Agnostic:
 
-    terminus_powerline_env: system | user/users   # install font system-wide or user-wide
+    terminus_powerline_env: system | user/users     # install font system-wide or user-wide
     # Attention: On MacOS font always will be installed system-wide
 
-    terminus_powerline_users:                     # list of users if running user-specific installation
+    terminus_powerline_users:                       # list of users if running user-specific installation
 
 OS-Specific:
 
-    terminus_powerline_fonts_dir:     # directory where the fonts being installed
+    terminus_powerline_fonts_dir:                   # directory where the fonts being installed
 
 Dependencies
 ------------
@@ -66,7 +66,7 @@ License
 Author Information
 ------------------
 
-![Andrew Shagayev](drewshg@gmail.com)
+Andrew Shagayev
 
 [role-badge]:https://img.shields.io/badge/role-drew--kun.terminus__powerline-green.svg
 [galaxy-link]: https://galaxy.ansible.com/drew-kun/terminus_powerline/
