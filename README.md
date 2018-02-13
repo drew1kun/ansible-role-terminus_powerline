@@ -4,7 +4,7 @@ Ansible role: terminus_powerline
 [![MIT licensed][mit-badge]][mit-link]
 [![Galaxy Role][role-badge]][galaxy-link]
 
-Cross-platform ansible role for installation of [Terminus font][terminus-git] (patched with Powerline symbols)
+Cross-platform ansible role for installation of [Terminus font][terminus-git] (patched with [Powerline][powerline-git] symbols)
 
 Requirements
 ------------
@@ -74,3 +74,4 @@ Andrew Shagayev
 [mit-link]: https://raw.githubusercontent.com/drew-kun/ansible-terminus_powerline/master/LICENSE
 [homebrew]: http://brew.sh/
 [terminus-git]: https://github.com/drew-kun/terminus_powerline_font_osx
+[powerline-git]: https://github.com/powerline/fonts
