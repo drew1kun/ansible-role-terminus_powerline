@@ -30,7 +30,7 @@ OS-Specific:
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| **terminus_powerline_fonts_dir** | Directory where the fonts being installed | Darwin: `/Library/Fonts/`; Debian: `/usr/local/share/fonts` |
+| **terminus_powerline_fonts_dir** | Directory where the fonts being installed | Darwin: `/Library/Fonts/`;    Debian: `/usr/local/share/fonts` |
 
 Dependencies
 ------------
