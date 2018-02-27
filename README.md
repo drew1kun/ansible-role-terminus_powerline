@@ -27,8 +27,9 @@ Role Variables
 --------------
 
 OS-Specific:
-
-    terminus_powerline_fonts_dir:     # directory where the fonts being installed
+| Variable | Description | Default |
+|----------|-------------|---------|
+| **terminus_powerline_fonts_dir** | Directory where the fonts being installed | Darwin: `/Library/Fonts/`; Debian: `/usr/local/share/fonts` |
 
 Dependencies
 ------------
