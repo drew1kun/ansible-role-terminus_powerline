@@ -56,7 +56,7 @@ For Linux:
 
     - hosts: dev_clients_linux
       roles:
-        - drew.kun.terminus_powerline
+        - drew-kun.terminus_powerline
 
 License
 -------
