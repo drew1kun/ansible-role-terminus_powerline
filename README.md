@@ -9,6 +9,8 @@ Cross-platform ansible role for System-wide installation of Terminus font (patch
 Requirements
 ------------
 
+NOTE: Role requires Fact Gathering by ansible!
+
 One of the following OS (or deriviatives):
  - Debian
  - MacOS (with [Homebrew][homebrew])
@@ -43,6 +45,7 @@ Example Playbook
 For MacOS:
 
     - hosts: dev_clients_macos
+      gather_facts: yes
       roles:
         - drew-kun.homebrew
         - drew-kun.terminus_powerline
@@ -50,8 +53,9 @@ For MacOS:
 For Linux:
 
     - hosts: dev_clients_linux
+      gather_facts: yes
       roles:
-        - drew.kun.terminus_powerline
+        - drew-kun.terminus_powerline
 
 License
 -------
