@@ -18,12 +18,12 @@ One of the following OS (or deriviatives):
 For MacOS:
 if Homebrew is not installed on the managed host, install the following role via galaxy:
 
-    ansible-galaxy install drew-kun.homebrew
+    ansible-galaxy install drew_kun.homebrew
 
  And include it in the playbook:
 
     roles:
-        - drew-kun.homebrew
+        - drew_kun.homebrew
 
 Role Variables
 --------------
@@ -47,15 +47,15 @@ For MacOS:
     - hosts: dev_clients_macos
       gather_facts: yes
       roles:
-        - drew-kun.homebrew
-        - drew-kun.terminus_powerline
+        - drew_kun.homebrew
+        - drew_kun.terminus_powerline
 
 For Linux:
 
     - hosts: dev_clients_linux
       gather_facts: yes
       roles:
-        - drew-kun.terminus_powerline
+        - drew_kun.terminus_powerline
 
 License
 -------
@@ -67,8 +67,8 @@ Author Information
 
 Andrew Shagayev
 
-[role-badge]:https://img.shields.io/badge/role-drew--kun.terminus__powerline-green.svg
-[galaxy-link]: https://galaxy.ansible.com/drew-kun/terminus_powerline/
+[role-badge]:https://img.shields.io/badge/role-drew__kun.terminus__powerline-green.svg
+[galaxy-link]: https://galaxy.ansible.com/drew_kun/terminus_powerline/
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[mit-link]: https://raw.githubusercontent.com/drew-kun/ansible-terminus_powerline/master/LICENSE
+[mit-link]: https://raw.githubusercontent.com/drew_kun/ansible-terminus_powerline/master/LICENSE
 [homebrew]: http://brew.sh/

@@ -21,9 +21,9 @@ galaxy_info:
     - terminus
     - fonts
     - powerline
-    - MacOS
-    - OSX
-    - Debian
+    - macos
+    - osx
+    - debian
 
 dependencies: []
 ...
