@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: terminus_powerline
   author: Andrew Shagayev
   description: 'Role installs the Terminus font (patched with Powerline symbols)'
 
