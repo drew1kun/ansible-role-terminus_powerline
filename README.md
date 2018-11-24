@@ -44,11 +44,13 @@ Example Playbook
 
 For MacOS:
 
-    - hosts: dev_clients_macos
-      gather_facts: yes
-      roles:
-        - drew-kun.homebrew
-        - drew-kun.terminus_powerline
+```yaml
+- hosts: dev_clients_macos
+  gather_facts: yes
+  roles:
+  - drew-kun.homebrew
+  - drew-kun.terminus_powerline
+```
 
 For Linux:
 
