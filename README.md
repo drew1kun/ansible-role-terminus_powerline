@@ -55,10 +55,10 @@ For MacOS:
 For Linux:
 
 ```yaml
-    - hosts: dev_clients_linux
-      gather_facts: yes
-      roles:
-        - drew-kun.terminus_powerline
+- hosts: dev_clients_linux
+  gather_facts: yes
+  roles:
+  - drew-kun.terminus_powerline
 ```
 
 License
