@@ -3,24 +3,28 @@
   homebrew:
     update_homebrew: yes
     name:
-      - fontconfig
-      - git
-    state: latest
+    - fontconfig
+    - git
+    state: present
+  register: terminus_powerline_dep_result
+  until:  terminus_powerline_dep_result is succeeded
   become: no
   when: ansible_os_family == 'Darwin'
   tags:
-    - terminus_powerline
-    - terminus_powerline_dependencies
+  - terminus_powerline
+  - terminus_powerline_dependencies
 
 - name: '[dependencies] Install fontconfig package on Linux'
   package:
     name:
-      - fontconfig
-      - git
-    state: latest
+    - fontconfig
+    - git
+    state: present
+  register: terminus_powerline_dep_result
+  until:  terminus_powerline_dep_result is succeeded
   become: yes
   when: ansible_os_family == 'Debian'
   tags:
-    - terminus_powerline
-    - terminus_powerline_dependencies
+  - terminus_powerline
+  - terminus_powerline_dependencies
 ...
