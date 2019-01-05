@@ -11,20 +11,18 @@ galaxy_info:
   github_branch: master
 
   platforms:
-    - name: MacOSX
-      versions:
-        - all
-    - name: Debian
-      versions:
-        - jessie
+  - name: MacOSX
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - jessie
 
   galaxy_tags:
-    - terminus
-    - fonts
-    - powerline
-    - macos
-    - osx
-    - debian
-
-dependencies: []
+  - terminus
+  - fonts
+  - powerline
+  - macos
+  - osx
+  - debian
 ...
