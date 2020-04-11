@@ -1,6 +1,6 @@
 ---
 - name: '[main] Include Dependencies installation tasks'
-  include_tasks: dependencies.yml
+  import_tasks: dependencies.yml
   tags:
     - terminus_powerline
     - terminus_powerline_dependencies
@@ -28,7 +28,7 @@
 
 - name: '[main] Install Terminus-Powerline font'
   command: "fc-cache -f {{ terminus_powerline_fonts_dir }}"
-  when: terminus_powerline_stat.stat.exists == false
+  when: not terminus_powerline_stat.stat.exists
   tags:
     - terminus_powerline
 

@@ -7,7 +7,7 @@
       - git
     state: latest
   become: no
-  when: ansible_os_family == 'Darwin'
+  when: "'Darwin' in ansible_os_family"
   tags:
     - terminus_powerline
     - terminus_powerline_dependencies
@@ -19,7 +19,7 @@
       - git
     state: latest
   become: yes
-  when: ansible_os_family == 'Debian'
+  when: "'Debian' in ansible_os_family"
   tags:
     - terminus_powerline
     - terminus_powerline_dependencies
