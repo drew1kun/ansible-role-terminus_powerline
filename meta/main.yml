@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: terminus_powerline
   author: Andrew Shagayev
   description: 'Role installs the Terminus font (patched with Powerline symbols)'
 
@@ -10,20 +11,19 @@ galaxy_info:
   github_branch: master
 
   platforms:
-    - name: MacOSX
-      versions:
-        - all
-    - name: Debian
-      versions:
-        - jessie
+  - name: MacOSX
+    versions:
+    - all
+    - any
+  - name: Debian
+    versions:
+    - jessie
 
   galaxy_tags:
-    - terminus
-    - fonts
-    - powerline
-    - MacOS
-    - OSX
-    - Debian
-
-dependencies: []
+  - terminus
+  - fonts
+  - powerline
+  - macos
+  - osx
+  - debian
 ...

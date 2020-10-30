@@ -9,6 +9,8 @@ Cross-platform ansible role for installation of [Terminus font][terminus-git] (p
 Requirements
 ------------
 
+NOTE: Role requires Fact Gathering by ansible!
+
 One of the following OS (or deriviatives):
  - Debian
  - MacOS (with [Homebrew][homebrew])
@@ -20,8 +22,10 @@ if Homebrew is not installed on the managed host, install the following role via
 
  And include it in the playbook:
 
-    roles:
-        - drew-kun.homebrew
+```yaml
+roles:
+- geerlingguy.homebrew
+```
 
 Role Variables
 --------------
@@ -35,7 +39,9 @@ OS-Agnostic:
 
 OS-Specific:
 
-    terminus_powerline_fonts_dir:                   # directory where the fonts being installed
+| Variable | Description | Default |
+|----------|-------------|---------|
+| **terminus_powerline_fonts_dir** | Directory the fonts installed to | <ul><li>Darwin: `/Library/Fonts/`</li><li>Debian: `/usr/local/share/fonts`</li></ul> |
 
 Dependencies
 ------------
@@ -47,16 +53,22 @@ Example Playbook
 
 For MacOS:
 
-    - hosts: dev_clients_macos
-      roles:
-        - drew-kun.homebrew
-        - drew-kun.terminus_powerline
+```yaml
+- hosts: dev_clients_macos
+  gather_facts: yes
+  roles:
+  - drew-kun.homebrew
+  - drew-kun.terminus_powerline
+```
 
 For Linux:
 
-    - hosts: dev_clients_linux
-      roles:
-        - drew-kun.terminus_powerline
+```yaml
+- hosts: dev_clients_linux
+  gather_facts: yes
+  roles:
+  - drew-kun.terminus_powerline
+```
 
 License
 -------
