@@ -1,7 +1,6 @@
 ---
 - name: '[dependencies] Install fontconfig package on Darwin'
   homebrew:
-    update_homebrew: yes
     name:
     - fontconfig
     - git
@@ -27,4 +26,3 @@
   tags:
   - terminus_powerline
   - terminus_powerline_dependencies
-...

@@ -1,5 +1,5 @@
 ---
-- name: '[main] Include Dependencies installation tasks'
+- name: '[main] Import Dependencies installation tasks'
   import_tasks: dependencies.yml
   tags:
   - terminus_powerline
@@ -11,7 +11,7 @@
 
 - name: '[main] Clone Terminus-Powerline Patched font from my github repo'
   git:
-    repo: https://github.com/drew-kun/terminus_powerline_font_osx.git
+    repo: https://github.com/drew1kun/terminus_powerline_font_osx.git
     dest: "{{ terminus_powerline_fonts_dir }}/terminus_powerline"
     version: master
     force: yes
@@ -28,4 +28,3 @@
   command: "fc-cache -f {{ terminus_powerline_fonts_dir }}"
   when: not terminus_powerline_stat.stat.exists
   tags: terminus_powerline
-...
